@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+background-image: url(dddepth-213.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+backdrop-filter: blur(7px);
+}
+
+#main{
+
+    min-height: 100vh;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#addBtn{
+    z-index: 99;
+position: sticky;
+top: 0;
+right: 0;
+    /* position: fixed; */
+    left: 10px;
+    top: 10px;
+    background-color: #351297;
+    border: none;
+    padding: 10px;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addBtn:hover{
+    background-color: #06a006;
+}
+
+.note{
+    background: transparent;
+    margin: 4px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+h2{
+    width: 130px;
+    z-index: -10;
+    font-size: medium;
+position: relative;
+top: 30px;
+left: 20px;
+opacity: 40%;
+    cursor: pointer;
+    color: rgba(240, 248, 255, 0.425);
+}
+.tool{
+    border-radius: 4px;
+    margin-top: 70px;
+    background-color: #00000098;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+.fa-save{
+    color: #00ff00 !important;
+}
+.tool i{
+    color: red;
+    padding: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.tool i:hover{
+    color: #aca1a1;
+}
+
+.note textarea{
+    width: 300px;
+    border: none;
+    min-height: 220px;   
+    resize: none;     
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    overflow: hidden;
+    background-color: #d5e3ff34;
+    backdrop-filter: blur(4px);
+    border-radius: 0px 0px 10px 10px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.note textarea:focus{
+    outline: none;
+}
